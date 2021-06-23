@@ -1,0 +1,95 @@
+article{
+    display: flex;
+    margin: 82px auto 32px;
+    padding: 0 16px;
+    max-width: 960px;
+    flex-direction: column;
+    align-items: center;
+    #short-link{
+        margin-top:4em;
+        text-align: center;
+        .short-link-display{
+            padding: 0 2em;
+            border: 2px dashed black;
+            span{
+                margin-left:2em;
+            }
+        }       
+    }
+}
+
+label{
+    display: block;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+input{
+    border:1px solid black;
+    width:20em;
+    padding:0 0.3em;
+    height:2em;
+    margin: 2em 2em auto auto;
+    box-shadow: rgb(80, 80, 80) 6px 6px;
+    font-size:20px;
+}
+
+button{
+    border:2px solid green;
+    width:5em;
+    height:2em;
+    font-size:20px;
+    background:rgb(255, 240, 211);
+    box-shadow: rgb(80, 80, 80) 6px 6px;
+}
+
+.copy-button::before{
+    content: url('../../assets/clipboard.svg');
+    margin-right:5px;
+}
+
+.copy-button{
+    width:5.5em;
+    height:2.2em;
+}
+
+
+.spinner, .spinner-1 {
+    width: 100%;
+    height: 100%;
+    border: 5px dashed #181818 !important;
+    position: absolute;
+    border-radius: 0%;
+    -webkit-animation: spinner-scaleout 2.0s infinite ease-in-out;
+    animation: spinner-scaleout 2.0s infinite ease-in-out;
+  }
+  
+  .spinner-container{
+    width: 50px;
+    height: 50px;
+    position: relative;
+  }
+  
+  .spinner-1 {
+      -webkit-animation-delay: -0.5s !important;
+      animation-delay: -0.5s !important;
+   }
+  
+  @-webkit-keyframes spinner-scaleout {
+    0% { -webkit-transform: scale(0) }
+    100% {
+      -webkit-transform: scale(1.0);
+      opacity: 0;
+    }
+  }
+  
+  @keyframes spinner-scaleout {
+    0% { 
+      -webkit-transform: scale(0);
+      transform: scale(0);
+    } 100% {
+      -webkit-transform: scale(1.0);
+      transform: scale(1.0);
+      opacity: 0;
+    }
+  }

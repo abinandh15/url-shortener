@@ -1,0 +1,27 @@
+
+<article>
+    <section id="link-form">
+        <form [formGroup]="urlForm">
+            <label for="url_input">URL to shorten</label>
+            <input type="text" id="url_input" formControlName="url">
+            <button (click)="shrinkURL()">Shrink</button>
+        </form>
+    </section>
+    
+    <section id="short-link">
+        <div class="spinner-container" *ngIf="loading">
+            <div class="spinner"></div>
+            <div class="spinner-1"></div>
+        </div>
+        <div class="short-link-display"  *ngIf="shortLink.length > 0">
+            <p>
+                {{shortLink}}
+                <span><button [disabled]="copied" class="copy-button" (click)="copyToClipboard()">Copy</button></span>
+            </p>
+        </div>
+        <p *ngIf="copied">Copied to clipboard.</p>
+
+    </section>
+</article>
+
+

@@ -3,7 +3,10 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  bitlyConfig:{
+    bearerToken: 'dc4979217c7d7d41e49db59cf0343866167bb1fa'
+  }
 };
 
 /*
