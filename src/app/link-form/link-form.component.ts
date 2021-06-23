@@ -28,6 +28,8 @@ export class LinkFormComponent implements OnInit {
 
   shrinkURL(){
     if(this.urlForm.valid){
+      this.copied = false;
+      this.shortLink = '';
       this.loading = true;
       const data = { 
         domain: "bit.ly",  
