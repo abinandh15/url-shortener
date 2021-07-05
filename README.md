@@ -1,4 +1,4 @@
-# AngularUrlshortener
+# Angular Url Shortener
 
 ![image](https://user-images.githubusercontent.com/47912011/123056553-a52c7f00-d424-11eb-9c06-da0edb24e724.png)
 
